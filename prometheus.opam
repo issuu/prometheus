@@ -13,7 +13,8 @@ depends: [
   "asetmap"
   "fmt"
   "re"
-  "lwt" {>= "2.5.0"}
+  "ppx_let" {>= "v0.14" & < "v0.15"}
+  "async" {>= "v0.14.0"}
   "alcotest" {with-test}
 ]
 build: [

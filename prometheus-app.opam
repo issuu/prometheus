@@ -32,7 +32,10 @@ depends: [
   "re"
   "cohttp-lwt" {>= "4.0.0"}
   "cohttp-lwt-unix" {>= "4.0.0"}
+  "cohttp-async" {>= "4.0.0"}
   "lwt" {>= "2.5.0"}
+  "async" {>= "v0.14" & < "v0.15"}
+  "ppx_let" {>= "v0.14" & < "v0.15"}
   "cmdliner"
   "alcotest" {with-test}
   "asetmap"

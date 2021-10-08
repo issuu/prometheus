@@ -1,0 +1,4 @@
+(executable
+  (name         example_async)
+  (libraries    prometheus_async prometheus-app.async cohttp-async)
+  (preprocess (pps ppx_let)))

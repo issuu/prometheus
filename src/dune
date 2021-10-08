@@ -1,4 +1,14 @@
 (library
  (name prometheus)
  (public_name prometheus)
- (libraries lwt astring asetmap fmt re))
+ (libraries lwt astring asetmap fmt re)
+ (modules Prometheus)
+ (wrapped false))
+
+(library
+ (name prometheus_async)
+ (public_name prometheus.async)
+ (libraries async astring asetmap fmt re)
+ (preprocess (pps ppx_let))
+ (modules Prometheus_async)
+ (wrapped false))

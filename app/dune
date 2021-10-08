@@ -11,3 +11,11 @@
  (libraries prometheus prometheus-app cmdliner cohttp-lwt cohttp-lwt-unix logs.fmt fmt.tty)
  (modules Prometheus_unix)
  (wrapped false))
+
+(library
+ (name prometheus_app_async)
+ (public_name prometheus-app.async)
+ (libraries prometheus_async async cohttp-async astring asetmap fmt re)
+ (preprocess (pps ppx_let))
+ (modules Prometheus_app_async)
+ (wrapped false))
