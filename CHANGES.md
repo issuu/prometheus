@@ -1,3 +1,7 @@
+## v1.2 (2021-06-08)
+
+- Async api
+
 ## v1.1 (2021-06-08)
 
 - Allow using a custom formatter for log output (@MisterDA #31).
@@ -5,7 +9,7 @@
 
 ## v1.0 (2020-12-22)
 
-- Add logging configuration (#29, @talex5).  
+- Add logging configuration (#29, @talex5).
   To configure a server to report counts for log messages:
   ```ocaml
   let () = Prometheus_unix.Logging.init ()
