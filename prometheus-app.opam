@@ -21,9 +21,9 @@ Unikernels can use `Prometheus_app` instead of `Prometheus_unix` to avoid the `U
 maintainer: "talex5@gmail.com"
 authors: ["Thomas Leonard" "David Scott"]
 license: "Apache-2.0"
-homepage: "https://github.com/mirage/prometheus"
-doc: "https://mirage.github.io/prometheus/"
-bug-reports: "https://github.com/mirage/prometheus/issues"
+homepage: "https://github.com/issuu/prometheus"
+doc: "https://issuu.github.io/prometheus/"
+bug-reports: "https://github.com/issuu/prometheus/issues"
 depends: [
   "ocaml" {>= "4.02.3"}
   "dune" {>= "1.0"}
@@ -46,4 +46,4 @@ build: [
   ["dune" "build" "-p" name "-j" jobs]
   ["dune" "runtest" "-p" name "-j" jobs] {with-test}
 ]
-dev-repo: "git+https://github.com/mirage/prometheus.git"
+dev-repo: "git+https://github.com/issuu/prometheus.git"
