@@ -3,9 +3,9 @@ synopsis: "Client library for Prometheus monitoring"
 maintainer: "talex5@gmail.com"
 authors: ["Thomas Leonard" "David Scott"]
 license: "Apache-2.0"
-homepage: "https://github.com/mirage/prometheus"
-doc: "https://mirage.github.io/prometheus/"
-bug-reports: "https://github.com/mirage/prometheus/issues"
+homepage: "https://github.com/issuu/prometheus"
+doc: "https://issuu.github.io/prometheus/"
+bug-reports: "https://github.com/issuu/prometheus/issues"
 depends: [
   "ocaml" {>= "4.01.0"}
   "dune"
@@ -13,7 +13,7 @@ depends: [
   "asetmap"
   "fmt"
   "re"
-  "ppx_let" {>= "v0.14" & < "v0.15"}
+  "ppx_let" {>= "v0.14"}
   "async" {>= "v0.14.0"}
   "alcotest" {with-test}
 ]
@@ -21,7 +21,7 @@ build: [
   ["dune" "build" "-p" name "-j" jobs]
   ["dune" "runtest" "-p" name "-j" jobs] {with-test}
 ]
-dev-repo: "git+https://github.com/mirage/prometheus.git"
+dev-repo: "git+https://github.com/issuu/prometheus.git"
 description: """
 To run services reliably, it is useful if they can report various metrics
 (for example, heap size, queue lengths, number of warnings logged, etc).
