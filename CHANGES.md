@@ -1,3 +1,5 @@
+## v1.3 (2024-01-09)
+
 - Relax Janestreet library version constraints
 - Use version of cohttp-async library that is compatible with Core_unix
 
